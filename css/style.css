@@ -1,0 +1,311 @@
+
+body{
+    display: inline-block;
+    color: #fff;
+    background-color: #16360a;
+    margin: 20px ;
+    line-height: 30px;
+    text-align: center;
+}
+nav{
+    background-color: #16360a;
+    padding: 10px;
+    margin-bottom: 40px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    border: solid 2px red;
+    border-radius: 30px;
+}
+.grid2{
+    display:grid;
+    grid-gap: 5%;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: stretch;
+}
+
+ul li.item1{
+    grid-column: 1/2;
+}
+
+.item2{
+    grid-column: 2/3;
+}
+
+li.item3{
+    grid-column: 3/4;
+}
+ul li.item4{
+    grid-column: 4/5;
+}
+.item5{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.item6{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.item7{
+    justify-self: center;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.item8{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+#my_heading{
+    color: beige;
+}
+
+h1{
+    font-size: xx-large;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: aliceblue;
+    margin-bottom: 20px;
+}
+h2{
+    font-size: x-large;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color: aliceblue;
+    margin: 15px;
+}
+h3{
+    display: inline-block;
+    font-size: large;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color: aliceblue;
+    padding: 10px 20px;
+    border: solid;
+    border-width: 2px;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+h4{
+    text-align: left;
+    font-size: medium;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color: aliceblue;
+    margin-top: 20px;
+}
+p{
+    line-height: 1.5;
+}
+.section{
+    margin: 20px;
+    padding: 20px;
+    border: solid 2px #fff;
+    border-radius: 30px;
+}
+img{
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    border: solid 2px #fff;
+    border-top-right-radius: 20px;
+}
+.in{
+    text-align: left;
+    line-height: 20px;
+}
+.list{
+    display: inline-block;
+    margin: 20px;
+}
+
+li{
+    margin: 10px;}
+
+.list:hover{
+color: #7fffd450;
+}
+a.current{
+    border-bottom: solid 2px #fff;
+    color: #d4ff7f;
+}
+.list:active{
+    color: #d4ff7f;
+}
+.skip {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+     overflow: hidden;
+    }
+.skip:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    }
+.center{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+.motion {
+        animation: bounce 1200ms;
+      }
+      @media (prefers-reduced-motion) {
+    .motion {
+        animation: none;
+        }
+        }
+@media (min-width:900px){
+
+    .skip:focus {
+        font-size: x-large;
+        position: static;
+        width: auto;
+        height: auto;
+        }
+    h1, h2, h3, h4, p, li{
+        font-size: xx-large;
+    }
+    img{
+        width: 80%;
+        padding:20px;
+    }
+    li{
+        line-height: 1;
+    }
+    h4{
+        padding: 40px 0 30px 10px;
+    }
+    h3{
+        padding: 20px 40px;
+        color: black;
+        background-color: #d4ff7f;
+        border: solid 2px #fff;
+    }
+    a.current{
+        color: black;
+        font-weight: bold;
+        font-size: xx-large;
+        background-color: #d4ff7f;
+        border: solid 2px #fff;
+        border-radius: 20px;
+        padding: 10px 50px;
+    }
+    .grid2{
+        display:inline-block;
+        padding: 20px;
+        height: 800px;
+        background-color: #ff000050;
+        border: solid 2px #fff;
+        border-radius: 30px;
+        overflow:scroll;
+        }
+    .grid2 img:hover{
+        transform: scale(1.5);
+        border: none;
+        margin: 20px;
+    }
+    img{
+        align-items: none;
+        width: 90%;
+    }
+}
+@media (min-width: 1200px){
+    .skip:focus {
+        font-size: xx-large;
+        position: static;
+        width: auto;
+        height: auto;
+        }
+    a.current {
+        color: black;
+        font-weight: bold;
+        font-size: xx-large;
+        background-color: #d4ff7f;
+        border: solid 2px #fff;
+        border-radius: 20px;
+        padding: 10px 50px;
+        background-image: url("data:image/svg+xml,%3Csvg width='100%25' height='20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 20 Q 10 0, 20 20 T 40 20 T 60 20 T 80 20 T 100 20 T 120 20 T 140 20 T 160 20 T 180 20 T 200 20' stroke='%23000000' stroke-width='3' fill='none'/%3E%3C/svg%3E");
+        background-repeat: repeat-x;
+        background-position: bottom;
+        background-size: 20px 10px;
+    }
+    div.recipe_gallery{
+        padding: 10px;
+        border: solid 2px #fff;
+        border-top-right-radius: 20px;
+        max-height: 800px;
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: repeat(3, 2fr);
+        align-items: stretch;
+        column-gap: 20px;
+        overflow-y: hidden;
+    }
+    div.recipe_gallery img:hover{
+        display: inline-block;
+        transform: scale(1.5);
+        border: none;
+        overflow: hidden;
+    }
+    button:hover {
+        animation: wiggle 2s linear 1;
+      }
+      @keyframes wiggle {
+        0%, 7% {
+          transform: rotateZ(0);
+        }
+        15% {
+          transform: rotateZ(-5deg);
+        }
+        20% {
+          transform: rotateZ(3deg);
+        }
+        25% {
+          transform: rotateZ(-3deg);
+        }
+        30% {
+          transform: rotateZ(1deg);
+        }
+        35% {
+          transform: rotateZ(-1deg);
+        }
+        40%, 100% {
+          transform: rotateZ(0);
+        }
+      }
+      button {
+        position: relative;
+        height: 2em;
+        width: 5em;
+        color: black;
+        background-color: #d4ff7f;
+        border: solid 2px #fff;
+        border-radius: 20px;
+        transform-origin: 50% 5em;
+        margin: 20px;
+      }
+      .heart {
+        position: absolute;
+        font-size: 30px;
+        animation: animateHeart 1s linear forwards;
+    }
+    @keyframes animateHeart {
+        0% {
+            transform: scale(0);
+            opacity: 1;
+        }
+        100% {
+            transform: scale(1);
+            opacity: 0;
+        }
+    }
+}
